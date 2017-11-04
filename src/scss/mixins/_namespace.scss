@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    NAMESPACE
+
+    This mixin encapsulates CSS within 
+    a namespace to prevent outside
+    conflicts as much as possible.
+\*------------------------------------*/
+@mixin namespace() {
+
+    .boilerform & {
+        @content;
+    }
+}
