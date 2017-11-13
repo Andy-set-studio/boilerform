@@ -5,9 +5,16 @@
     a namespace to prevent outside
     conflicts as much as possible.
 \*------------------------------------*/
-@mixin namespace() {
+@mixin namespace($isRoot: false) {
 
-    .boilerform & {
-        @content;
+    @if ($isRoot == true) {
+        .boilerform {
+            @content;
+        }
+    }
+    @else {
+        .boilerform & {
+            @content;
+        }
     }
 }

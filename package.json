@@ -1,0 +1,23 @@
+{
+  "name": "boilerform",
+  "version": "0.1.0",
+  "description": "A little collection of common form elements that have base markup and CSS set up for you.",
+  "scripts": {
+    "sass": "node-sass assets/scss/boilerform.scss --output docs/assets/css --source-map-embed --source-map-contents --output-style compressed",
+    "watch": "npm run sass --watch",
+    "build": "node-sass assets/scss/boilerform.scss --output docs/assets/css --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hankchizljaw/boilerform.git"
+  },
+  "author": "hankchizljaw",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hankchizljaw/boilerform/issues"
+  },
+  "homepage": "https://github.com/hankchizljaw/boilerform#readme",
+  "devDependencies": {
+    "node-sass": "^4.6.1"
+  }
+}
