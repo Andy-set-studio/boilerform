@@ -7,5 +7,15 @@
 
     @include namespace() {
 
+        @extend %c-field-shared-inputs;
+
+        &--multiline {
+            vertical-align: top;
+            overflow: auto;
+
+            &:not([rows]) {
+                min-height: $multiline-min-height;
+            }
+        }
     }
 }

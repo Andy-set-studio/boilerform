@@ -1,14 +1,16 @@
 @include namespace(true) {
     
+    // Set base pixel size for REM units to work off
+    font-size: $base-font-size;
+
     // All field elements
     [class*="-field"] {
         margin: 0;
-        padding: 0;
         display: inline-block;
         vertical-align: middle;
         white-space: normal;
-        background: none;
         line-height: 1;
+        font-family: $base-font-family;
     }
 
     // Turn off the recent search in WebKit.

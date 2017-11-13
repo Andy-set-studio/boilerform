@@ -31,9 +31,11 @@
     },
     "assets": {
         "css": [
-            "https://cdn.rawgit.com/hankchizljaw/boilerform/master/dist/css/boilerform.css"
+            "/assets/css/boilerform.css"
         ],
-        "js": []
+        "js": [
+            "/assets/js/patterns.js"
+        ]
     },
     "font_libraries": {
         "typekit_code": null,

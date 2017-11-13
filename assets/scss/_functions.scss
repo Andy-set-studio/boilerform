@@ -1,0 +1,14 @@
+/*------------------------------------*\
+    COLOR
+
+    Pass in a group name and a key
+    to get a value. 
+
+    E.G color(field, background) will return
+    the background item in the field group.
+
+    Colors are defined in $colors in _config.scss
+\*------------------------------------*/
+@function color($group, $color) {
+    @return map-get(map-get($colors, $group), $color);
+}
