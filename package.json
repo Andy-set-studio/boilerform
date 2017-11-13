@@ -4,7 +4,7 @@
   "description": "A little collection of common form elements that have base markup and CSS set up for you.",
   "scripts": {
     "sass": "node-sass assets/scss/boilerform.scss --output docs/assets/css --source-map-embed --source-map-contents --output-style compressed",
-    "watch": "npm run sass --watch",
+    "watch": "npm run sass -- --watch",
     "build": "node-sass assets/scss/boilerform.scss --output docs/assets/css --output-style compressed"
   },
   "repository": {
