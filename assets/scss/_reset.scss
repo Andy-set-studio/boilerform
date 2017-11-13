@@ -1,3 +1,18 @@
 @include namespace(true) {
-    // reset time
+    
+    // All field elements
+    [class*="-field"] {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        vertical-align: middle;
+        white-space: normal;
+        background: none;
+        line-height: 1;
+    }
+
+    // Turn off the recent search in WebKit.
+    ::-webkit-search-decoration {
+        display:none;
+    }
 }
