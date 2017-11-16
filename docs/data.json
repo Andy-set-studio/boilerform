@@ -55,11 +55,11 @@
     },
     "groups": [
         {
-            "name": "text-fields",
-            "title": "Text Fields",
+            "name": "input-field",
+            "title": "Input Field",
             "components": [
                 {
-                    "group": "text-fields",
+                    "group": "input-field",
                     "name": "text",
                     "title": "Text",
                     "width": "half"
