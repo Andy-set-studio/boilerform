@@ -63,6 +63,12 @@
                     "name": "text",
                     "title": "Text",
                     "width": "half"
+                },
+                {
+                    "group": "input-field",
+                    "name": "email",
+                    "title": "Email",
+                    "width": "half"
                 }
             ]
         }
