@@ -87,6 +87,12 @@
                     "name": "tel",
                     "title": "Tel",
                     "width": "half"
+                },
+                {
+                    "group": "input-field",
+                    "name": "text-area",
+                    "title": "Textarea / Multiline",
+                    "width": "half"
                 }
             ]
         }
