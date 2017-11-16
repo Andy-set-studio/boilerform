@@ -81,6 +81,12 @@
                     "name": "number",
                     "title": "Number",
                     "width": "half"
+                },
+                {
+                    "group": "input-field",
+                    "name": "tel",
+                    "title": "Tel",
+                    "width": "half"
                 }
             ]
         }
