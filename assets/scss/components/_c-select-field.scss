@@ -1,29 +1,39 @@
+/*------------------------------------*\
+    SELECT FIELD
+
+    Option driven fields such as 
+    <select> menus
+\*------------------------------------*/
 .c-select-field {
-    display: block;
-    position: relative;
+    
+    @include namespace() {
+        
+        display: block;
+        position: relative;
 
-    &__menu {
-        @extend %c-field-shared-inputs;
+        &__menu {
+            @extend %c-field-shared-inputs;
 
-        -webkit-appearance: none;
-           -moz-appearance: none;
-        padding-right: #{ $input-field-horizontal-padding * 3 };
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            padding-right: #{ $input-field-horizontal-padding * 3 };
 
-        // Undo Firefox focus ring 
-        &:-moz-focusring {
-            color: transparent;
-            text-shadow: 0 0 0 $base-color;
+            // Undo Firefox focus ring 
+            &:-moz-focusring {
+                color: transparent;
+                text-shadow: 0 0 0 $base-color;
+            }
+
+            // Remove arrow in IE
+            &::-ms-expand {
+                display: none;
+            }
         }
 
-        // Remove arrow in IE
-        &::-ms-expand {
-            display: none;
+        &__decor {
+            position: absolute;
+            top: 50%;
+            right: $input-field-horizontal-padding;
         }
-    }
-
-    &__decor {
-        position: absolute;
-        top: 50%;
-        right: $input-field-horizontal-padding;
     }
 }
