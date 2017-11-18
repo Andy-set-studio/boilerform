@@ -8,7 +8,7 @@
     
     @include namespace() {
         
-        display: block;
+        display: inline-block;
         position: relative;
 
         &__menu {
