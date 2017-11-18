@@ -55,18 +55,6 @@
     },
     "groups": [
         {
-            "name": "select-field",
-            "title": "Select Field",
-            "components": [
-                {
-                    "group": "select-field",
-                    "name": "select-menu",
-                    "title": "Select Menu",
-                    "width": "half"
-                }
-            ]
-        },
-        {
             "name": "input-field",
             "title": "Input Field",
             "components": [
@@ -104,6 +92,18 @@
                     "group": "input-field",
                     "name": "text-area",
                     "title": "Textarea / Multiline",
+                    "width": "half"
+                }
+            ]
+        },
+        {
+            "name": "select-field",
+            "title": "Select Field",
+            "components": [
+                {
+                    "group": "select-field",
+                    "name": "select-menu",
+                    "title": "Select Menu",
                     "width": "half"
                 }
             ]
