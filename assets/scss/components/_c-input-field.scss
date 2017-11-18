@@ -9,9 +9,16 @@
 
         @extend %c-field-shared-inputs;
 
+        // Reduce right-hand padding for number inputs
+        &[type="number"] {
+            padding-right: #{ $input-field-padding / 2 };
+        }
+
+        // Multiline fields like <textarea> etc
         &--multiline {
             vertical-align: top;
             overflow: auto;
+            width: 100%;
 
             &:not([rows]) {
                 min-height: $multiline-min-height;

@@ -3,6 +3,12 @@
     // Set base pixel size for REM units to work off
     font-size: $base-font-size;
 
+    // Box sizing border-box FTW
+    &,
+    & * {
+        box-sizing: border-box;
+    }
+    
     // All field elements
     [class*="-field"] {
         margin: 0;
@@ -16,5 +22,10 @@
     // Turn off the recent search in WebKit.
     ::-webkit-search-decoration {
         display:none;
+    }
+
+    // Make a search box appear like a text box
+    input[type="search"] {
+        -webkit-appearance: textfield;
     }
 }
