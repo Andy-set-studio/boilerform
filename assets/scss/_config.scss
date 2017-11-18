@@ -7,7 +7,9 @@ $colors: (
 );
 
 // Metrics
-$input-field-padding: 10px 15px;
+$input-field-vertical-padding: 10px;
+$input-field-horizontal-padding: 15px;
+$input-field-padding: $input-field-vertical-padding $input-field-horizontal-padding;
 $multiline-min-height: 80px;
 
 // Decorative

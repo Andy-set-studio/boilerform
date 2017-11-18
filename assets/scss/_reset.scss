@@ -19,6 +19,12 @@
         font-family: $base-font-family;
     }
 
+    // All decorative elements 
+    [class*="decor"] {
+        line-height: 0;
+        pointer-events: none;
+    }
+
     // Turn off the recent search in WebKit.
     ::-webkit-search-decoration {
         display:none;

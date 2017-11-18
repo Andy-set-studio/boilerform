@@ -1,0 +1,18 @@
+.c-select-field {
+    display: block;
+    position: relative;
+
+    &__menu {
+        @extend %c-field-shared-inputs;
+
+        -webkit-appearance: none;
+           -moz-appearance: none;
+        padding-right: #{ $input-field-horizontal-padding * 3 };
+    }
+
+    &__decor {
+        position: absolute;
+        top: 50%;
+        right: $input-field-horizontal-padding;
+    }
+}
