@@ -2,6 +2,9 @@
     
     // Set base pixel size for REM units to work off
     font-size: $base-font-size;
+    
+    // Set the base color 
+    color: $base-color;
 
     // Box sizing border-box FTW
     &,
