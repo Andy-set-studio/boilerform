@@ -4,6 +4,7 @@ node_modules
 .sass-cache
 *.log
 *.scssc
+npm-debug.*
 
 # Compiled assets
 docs/assets/
