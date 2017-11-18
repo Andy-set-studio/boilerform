@@ -7,4 +7,4 @@ node_modules
 npm-debug.*
 
 # Compiled assets
-docs/assets/
+pattern-library/assets/
