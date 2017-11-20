@@ -6,6 +6,51 @@
 .c-check-field {
     
     @include namespace() {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
 
+        // Visually hide the input
+        &__input {
+            @extend %visually-hidden;
+        }
+
+        &__decor {
+            display: block;
+            width: $check-field-decor-size;
+            height: $check-field-decor-size;
+            flex-shrink: 0;
+            background: color(check, decor);
+            border: 1px solid color(check, border);
+            border-radius: $border-radius;
+            position: relative;
+            cursor: pointer;
+
+            &:after {
+                content: "";
+                speak: none;
+                display: block;
+                opacity: 0;
+                width: 70%;
+                height: 70%;
+                position: absolute;
+                top: 15%;
+                left: 15%;
+                background: color(check, decor__inner);
+                border-radius: #{ $border-radius / 2 };
+            }
+        }
+
+        &__label {
+            padding: $check-field-label-padding;
+            cursor: pointer;
+        }
+
+        // Checked state
+        &__input:checked ~ [class*="decor"] {
+            &:after {
+                opacity: 1;
+            }
+        }   
     }
 }

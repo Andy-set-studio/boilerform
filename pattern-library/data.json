@@ -107,6 +107,18 @@
                     "width": "half"
                 }
             ]
+        },
+        {
+            "name": "check-field",
+            "title": "Check Field",
+            "components": [
+                {
+                    "group": "check-field",
+                    "name": "checkbox",
+                    "title": "Checkbox",
+                    "width": "half"
+                }
+            ]
         }
     ],
     "version": "1.9.5"

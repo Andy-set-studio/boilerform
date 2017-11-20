@@ -6,3 +6,13 @@
     border-radius: $border-radius;
     font-size: $input-field-font-size;
 }
+
+// Visually hide an element, but allow a screen-reader to see it
+%visually-hidden {
+    display: block;                                                                                                                
+    height: 0px;                                                                                                                   
+    width: 0px;                                                                                                                    
+    overflow: hidden;                                                                                                              
+    clip: rect(1px, 1px, 1px, 1px);                                                                                                
+    visibility: hidden; 
+}

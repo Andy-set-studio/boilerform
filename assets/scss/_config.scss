@@ -3,6 +3,12 @@ $colors: (
     field: (
         background: #ffffff,
         border: #cccccc
+    ),
+    check: (
+        decor: #eeeeee,
+        decor--active: #aaaaaa,
+        decor__inner: #888888,
+        border: #cccccc
     )
 );
 
@@ -10,6 +16,8 @@ $colors: (
 $input-field-vertical-padding: 10px;
 $input-field-horizontal-padding: 15px;
 $input-field-padding: $input-field-vertical-padding $input-field-horizontal-padding;
+$check-field-decor-size: 20px;
+$check-field-label-padding: 3px 0 0 10px;
 $multiline-min-height: 80px;
 
 // Decorative
