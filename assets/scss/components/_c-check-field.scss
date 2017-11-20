@@ -46,11 +46,24 @@
             cursor: pointer;
         }
 
+        // Radio modifier
+        &--radio .c-check-field__decor {
+            &,
+            &:after {
+                border-radius: 50%;
+            }
+        }
+
         // Checked state
         &__input:checked ~ [class*="decor"] {
             &:after {
                 opacity: 1;
             }
         }   
+
+        // Flow between instances 
+        & + .c-check-field {
+            padding-top: $check-field-flow;
+        }
     }
 }

@@ -117,6 +117,12 @@
                     "name": "checkbox",
                     "title": "Checkbox",
                     "width": "half"
+                },
+                {
+                    "group": "check-field",
+                    "name": "radio",
+                    "title": "Radio",
+                    "width": "half"
                 }
             ]
         }
