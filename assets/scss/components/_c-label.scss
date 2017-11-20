@@ -3,7 +3,9 @@
 
     A simple form label
 \*------------------------------------*/
-.c-label {
+$namespace: ".c-label";
+
+#{ $namespace } {
     
     @include namespace() {
 

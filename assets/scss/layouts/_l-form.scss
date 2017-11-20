@@ -4,7 +4,9 @@
     The main form layout that gives
     you rythm, alignment and flow
 \*------------------------------------*/
-.l-form {
+$namespace: ".l-form";
+
+#{ $namespace } {
 
     @include namespace() {
 

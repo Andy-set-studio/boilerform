@@ -3,7 +3,9 @@
 
     All input based form field elements
 \*------------------------------------*/
-.c-input-field {
+$namespace: ".c-input-field";
+
+#{ $namespace } {
 
     @include namespace() {
 

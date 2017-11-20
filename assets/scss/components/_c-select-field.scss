@@ -4,7 +4,9 @@
     Option driven fields such as 
     <select> menus
 \*------------------------------------*/
-.c-select-field {
+$namespace: ".c-select-field";
+
+#{ $namespace } {
     
     @include namespace() {
         

@@ -1,22 +1,33 @@
-.c-button {
-    display: inline-block;
-    border: none;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    background: color(button, background);
-    color: color(button, text);
-    padding: $button-padding;
-    font-family: $base-font-family;
-    font-size: 1rem;
-    border-radius: $border-radius;
-    cursor: pointer;
-    text-align: center;
-    -webkit-appearance: none;
-       -moz-appearance: none;
+/*------------------------------------*\
+    BUTTON COMPONENT
 
-    &:hover,
-    &:focus {
-        background: color(button, background--hover);
+    Base button styles and reset
+\*------------------------------------*/
+$namespace: ".c-button";
+
+#{ $namespace } {
+
+    @include namespace() {
+        
+        display: inline-block;
+        border: none;
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        background: color(button, background);
+        color: color(button, text);
+        padding: $button-padding;
+        font-family: $base-font-family;
+        font-size: 1rem;
+        border-radius: $border-radius;
+        cursor: pointer;
+        text-align: center;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+
+        &:hover,
+        &:focus {
+            background: color(button, background--hover);
+        }
     }
 }
