@@ -1,24 +1,30 @@
 // Colors
 $colors: (
-    field: (
-        background: #ffffff,
-        border: #cccccc
+    button: (
+        background: #666666,
+        background--hover: #888888,
+        text: #ffffff
     ),
     check: (
         decor: #eeeeee,
         decor--active: #aaaaaa,
         decor__inner: #888888,
         border: #cccccc
+    ),
+    field: (
+        background: #ffffff,
+        border: #cccccc
     )
 );
 
 // Metrics
-$input-field-vertical-padding: 10px;
-$input-field-horizontal-padding: 15px;
-$input-field-padding: $input-field-vertical-padding $input-field-horizontal-padding;
+$button-padding: 10px 25px;
 $check-field-decor-size: 20px;
 $check-field-flow: 10px;
 $check-field-label-padding: 3px 0 0 10px;
+$input-field-vertical-padding: 10px;
+$input-field-horizontal-padding: 15px;
+$input-field-padding: $input-field-vertical-padding $input-field-horizontal-padding;
 $multiline-min-height: 80px;
 
 // Decorative

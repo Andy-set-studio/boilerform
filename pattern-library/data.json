@@ -125,6 +125,18 @@
                     "width": "half"
                 }
             ]
+        },
+        {
+            "name": "button",
+            "title": "Button",
+            "components": [
+                {
+                    "group": "button",
+                    "name": "default",
+                    "title": "Default",
+                    "width": "half"
+                }
+            ]
         }
     ],
     "version": "1.9.5"
