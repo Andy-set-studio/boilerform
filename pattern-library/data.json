@@ -137,6 +137,18 @@
                     "width": "half"
                 }
             ]
+        },
+        {
+            "name": "label",
+            "title": "Label",
+            "components": [
+                {
+                    "group": "label",
+                    "name": "default",
+                    "title": "Default",
+                    "width": "half"
+                }
+            ]
         }
     ],
     "version": "1.9.5"

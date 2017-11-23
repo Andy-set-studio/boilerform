@@ -8,6 +8,25 @@ $namespace: ".c-label";
 #{ $namespace } {
     
     @include namespace() {
+        display: inline;
+        font-family: $base-font-family;
+        font-weight: 700;
+        font-size: 0.88rem;
 
+        // Only add a pointer cursor if there's a for attribute
+        &[for] {
+            cursor: pointer;
+        }
+
+        // Create a line break
+        &:after {
+            content: "\A";
+            white-space: pre;
+        }
+
+        // Add space between a label and a field
+        & + [class*="field"] {
+            margin-top: 2px;
+        }
     }
 }
