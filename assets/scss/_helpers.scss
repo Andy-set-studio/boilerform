@@ -1,7 +1,7 @@
 // All input fields share these styles. Also includes select menus
 %c-field-shared-inputs {
     background: color(field, background);
-    border: 1px solid #{ color(field, border) };
+    border: 1px solid color(base, border);
     padding: $input-field-padding;
     border-radius: $border-radius;
     font-size: $input-field-font-size;

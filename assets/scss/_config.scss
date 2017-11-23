@@ -1,5 +1,9 @@
 // Colors
 $colors: (
+    base: (
+        text: #141414,
+        border: #cccccc 
+    ),
     button: (
         background: #666666,
         background--hover: #888888,
@@ -8,12 +12,13 @@ $colors: (
     check: (
         decor: #eeeeee,
         decor--active: #aaaaaa,
-        decor__inner: #888888,
-        border: #cccccc
+        decor__inner: #888888
     ),
     field: (
-        background: #ffffff,
-        border: #cccccc
+        background: #ffffff
+    ),
+    state: (
+        error: #cf0b00
     )
 );
 
@@ -33,5 +38,4 @@ $border-radius: 2px;
 // Typography 
 $base-font-family: sans-serif;
 $base-font-size: 16px;
-$base-color: #141414;
 $input-field-font-size: 1rem;

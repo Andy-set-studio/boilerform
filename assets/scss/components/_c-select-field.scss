@@ -23,7 +23,7 @@ $namespace: ".c-select-field";
             // Undo Firefox focus ring 
             &:-moz-focusring {
                 color: transparent;
-                text-shadow: 0 0 0 $base-color;
+                text-shadow: 0 0 0 color(base, text);
             }
 
             // Remove arrow in IE

@@ -93,6 +93,12 @@
                     "name": "text-area",
                     "title": "Textarea / Multiline",
                     "width": "half"
+                },
+                {
+                    "group": "input-field",
+                    "name": "error-state",
+                    "title": "Error State",
+                    "width": "half"
                 }
             ]
         },
@@ -104,6 +110,12 @@
                     "group": "select-field",
                     "name": "select-menu",
                     "title": "Select Menu",
+                    "width": "half"
+                },
+                {
+                    "group": "select-field",
+                    "name": "error-state",
+                    "title": "Error State",
                     "width": "half"
                 }
             ]
@@ -122,6 +134,12 @@
                     "group": "check-field",
                     "name": "radio",
                     "title": "Radio",
+                    "width": "half"
+                },
+                {
+                    "group": "check-field",
+                    "name": "error-state",
+                    "title": "Error State",
                     "width": "half"
                 }
             ]

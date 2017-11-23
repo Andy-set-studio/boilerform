@@ -4,7 +4,10 @@
     font-size: $base-font-size;
     
     // Set the base color 
-    color: $base-color;
+    color: color(base, text);
+
+    // Set base border color
+    border-color: color(base, border);
 
     // Box sizing border-box FTW
     &,

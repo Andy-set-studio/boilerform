@@ -22,3 +22,16 @@
 
 // Layouts
 @import "layouts/l-form";
+
+// Shared styles
+@include namespace(true) {
+
+    // Override border color for errors
+    .is-error {
+        &,
+        [class*="menu"],
+        [class*="check"] {
+            border-color: color(state, error);
+        }
+    }
+}

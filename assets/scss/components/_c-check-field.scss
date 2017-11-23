@@ -23,7 +23,7 @@ $namespace: ".c-check-field";
             height: $check-field-decor-size;
             flex-shrink: 0;
             background: color(check, decor);
-            border: 1px solid color(check, border);
+            border: 1px solid color(base, border);
             border-radius: $border-radius;
             position: relative;
             cursor: pointer;
