@@ -18,7 +18,7 @@
         display: inline-block;
         vertical-align: middle;
         white-space: normal;
-        line-height: 1;
+        line-height: 1.1;
         font-family: $base-font-family;
     }
 
@@ -29,7 +29,14 @@
 
     // Turn off the recent search in WebKit.
     ::-webkit-search-decoration {
-        display:none;
+        display: none;
+    }
+
+    // Normalise form field line-height in WebKit
+    input::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder,
+    select::-webkit-input-placeholder {
+        line-height: normal;
     }
 
     // Make a search box appear like a text box
