@@ -31,7 +31,7 @@
     },
     "assets": {
         "css": [
-            "/assets/css/boilerform.css"
+            "https://rawgit.com/hankchizljaw/boilerform/master/dist/css/boilerform.min.css"
         ],
         "js": [
             "/assets/js/patterns.js"
