@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "description": "A little collection of common form elements that have base markup and CSS set up for you.",
   "scripts": {
-    "sass": "node-sass assets/scss/boilerform.scss --output pattern-library/assets/css --source-map-embed --source-map-contents --output-style compressed -loglevel silent",
+    "sass": "node-sass assets/scss/boilerform.scss --output pattern-library/assets/css --source-map-embed --source-map-contents --output-style compressed",
+    "sass:dist": "node-sass assets/scss/boilerform.scss --output dist/css --output-style expanded", 
+    "sass:dist-min": "node-sass assets/scss/boilerform.scss --output-style compressed > dist/css/boilerform.min.css",
     "watch": "npm run sass -- --watch",
-    "build": "node-sass assets/scss/boilerform.scss --output pattern-library/assets/css --output-style compressed -loglevel silent"
+    "build": "npm run sass:dist && npm run sass:dist-min"
   },
   "repository": {
     "type": "git",
