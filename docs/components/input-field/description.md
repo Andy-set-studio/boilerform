@@ -1,0 +1,1 @@
+Generic input fields with variations for size, placeholders and validation states. Relevant attributes are added to help users input data as efficiently as possible.

@@ -1,0 +1,173 @@
+{
+    "project_logo": null,
+    "project_favicon": "favicon.png",
+    "project_name": "Boilerform",
+    "project_url": null,
+    "copyright_start_year": null,
+    "client_name": null,
+    "client_url": null,
+    "creators": [
+        {
+            "name": "hankchizljaw",
+            "url": "hankchizljaw.io"
+        }
+    ],
+    "theme": {
+        "border_color": "#E0E6ED",
+        "highlight_color": "#F9FAFC",
+        "brand_color": "#00585C",
+        "background_color": "#FFFFFF",
+        "code_highlight_theme": "github",
+        "override_code_highlight_bg": "#F9FAFC",
+        "sample_dark_background": "#333333",
+        "show_project_name": true,
+        "show_version": true,
+        "max_width": null,
+        "titles": {
+            "library_title": "Pattern Library",
+            "pages_title": "Overview",
+            "components_title": "Components"
+        }
+    },
+    "assets": {
+        "css": [
+            "/assets/css/boilerform.css"
+        ],
+        "js": [
+            "/assets/js/patterns.js"
+        ]
+    },
+    "font_libraries": {
+        "typekit_code": null,
+        "typography_web_fonts": null,
+        "google_web_fonts": null
+    },
+    "content": {
+        "show_first_page_on_load": true,
+        "title": "Overview",
+        "pages": [
+            {
+                "name": "introduction",
+                "title": "Introduction",
+                "file": "./pages/intro.md"
+            }
+        ]
+    },
+    "groups": [
+        {
+            "name": "input-field",
+            "title": "Input Field",
+            "components": [
+                {
+                    "group": "input-field",
+                    "name": "text",
+                    "title": "Text",
+                    "width": "half"
+                },
+                {
+                    "group": "input-field",
+                    "name": "email",
+                    "title": "Email",
+                    "width": "half"
+                },
+                {
+                    "group": "input-field",
+                    "name": "search",
+                    "title": "Search",
+                    "width": "half"
+                },
+                {
+                    "group": "input-field",
+                    "name": "number",
+                    "title": "Number",
+                    "width": "half"
+                },
+                {
+                    "group": "input-field",
+                    "name": "tel",
+                    "title": "Tel",
+                    "width": "half"
+                },
+                {
+                    "group": "input-field",
+                    "name": "text-area",
+                    "title": "Textarea / Multiline",
+                    "width": "half"
+                },
+                {
+                    "group": "input-field",
+                    "name": "error-state",
+                    "title": "Error State",
+                    "width": "half"
+                }
+            ]
+        },
+        {
+            "name": "select-field",
+            "title": "Select Field",
+            "components": [
+                {
+                    "group": "select-field",
+                    "name": "select-menu",
+                    "title": "Select Menu",
+                    "width": "half"
+                },
+                {
+                    "group": "select-field",
+                    "name": "error-state",
+                    "title": "Error State",
+                    "width": "half"
+                }
+            ]
+        },
+        {
+            "name": "check-field",
+            "title": "Check Field",
+            "components": [
+                {
+                    "group": "check-field",
+                    "name": "checkbox",
+                    "title": "Checkbox",
+                    "width": "half"
+                },
+                {
+                    "group": "check-field",
+                    "name": "radio",
+                    "title": "Radio",
+                    "width": "half"
+                },
+                {
+                    "group": "check-field",
+                    "name": "error-state",
+                    "title": "Error State",
+                    "width": "half"
+                }
+            ]
+        },
+        {
+            "name": "button",
+            "title": "Button",
+            "components": [
+                {
+                    "group": "button",
+                    "name": "default",
+                    "title": "Default",
+                    "width": "half"
+                }
+            ]
+        },
+        {
+            "name": "label",
+            "title": "Label",
+            "components": [
+                {
+                    "group": "label",
+                    "name": "default",
+                    "title": "Default",
+                    "width": "half"
+                }
+            ]
+        }
+    ],
+    "version": "1.9.5"
+}
