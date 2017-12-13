@@ -8,6 +8,3 @@ npm-debug.*
 
 # Compiled assets
 pattern-library/assets/css
-
-# Jekyll 
-_site
