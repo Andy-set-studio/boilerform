@@ -1,5 +1,5 @@
 {
-    "project_logo": null,
+    "project_logo": "/assets/images/logo/logo.svg",
     "project_favicon": "favicon.png",
     "project_name": "Boilerform",
     "project_url": null,
@@ -15,16 +15,16 @@
     "theme": {
         "border_color": "#E0E6ED",
         "highlight_color": "#F9FAFC",
-        "brand_color": "#00585C",
+        "brand_color": "#A03EA0",
         "background_color": "#FFFFFF",
         "code_highlight_theme": "github",
         "override_code_highlight_bg": "#F9FAFC",
         "sample_dark_background": "#333333",
-        "show_project_name": true,
+        "show_project_name": false,
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "Pattern Library",
+            "library_title": "Patterns",
             "pages_title": "Overview",
             "components_title": "Components"
         }
