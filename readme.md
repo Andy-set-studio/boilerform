@@ -2,7 +2,7 @@
 
 Boilerform is a little HTML and CSS boilerplate to take the pain away from working with forms.
 
-By providing baseline ITCSS inspired CSS and appropriate attributes on elements: Boilerform gives you a head start building forms in the best possible way with a view to being dropped into most projects. 
+By providing baseline BEM structured CSS and appropriate attributes on elements: Boilerform gives you a head start building forms in the best possible way with a view to being dropped into most projects. 
 
 The idea was first thought-up by [@chriscoyier](https://twitter.com/chriscoyier) on [CSS Tricks](https://css-tricks.com/boilerform).
 
