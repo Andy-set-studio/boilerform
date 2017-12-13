@@ -7,7 +7,7 @@
     "sass:dist": "node-sass assets/scss/boilerform.scss --output dist/css --output-style expanded",
     "sass:dist-min": "node-sass assets/scss/boilerform.scss --output-style compressed > dist/css/boilerform.min.css",
     "watch": "npm run sass -- --watch",
-    "build": "npm run sass:dist && npm run sass:dist-min"
+    "build": "npm run sass:dist && npm run sass:dist-min && node generator/dist.js && echo Done 👍🏼"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,9 @@
   },
   "homepage": "https://github.com/hankchizljaw/boilerform#readme",
   "devDependencies": {
+    "find-remove": "^1.2.0",
     "ncp": "^2.0.0",
-    "node-sass": "^4.6.1"
+    "node-sass": "^4.6.1",
+    "rimraf": "^2.6.2"
   }
 }

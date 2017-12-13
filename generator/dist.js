@@ -1,12 +1,18 @@
+var findRemoveSync = require('find-remove');
+var fs = require('fs');
 var ncp  = require('ncp');
 var path = require('path');
+var rimraf = require('rimraf');
 
-// Copy pattern lib to docs directory for GitHub pages
-ncp(path.join(__dirname, '../pattern-library'), path.join(__dirname, '../docs'), function(error) {
+// Delete the markup dist dir
+rimraf(path.join(__dirname, '../dist/markup'), function() {
 
-    if(error) {
-        return console.log(error);
-    }
+    // Copy the components from the pattern lib
+    ncp(path.join(__dirname, '../pattern-library/components'), path.join(__dirname, '../dist/markup'), function(error) {
+        
+        if(error) return console.log(error);
 
-    console.log('Pattern library successfully moved to docs for GitHub pages');
+        // Remove all markdown files
+        findRemoveSync(path.join(__dirname, '../dist/markup'), { extensions: '.md' });
+    });
 });
