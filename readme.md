@@ -27,3 +27,5 @@ To compile assets, you can run the following commands in your terminal:
 - `build` will compile your Sass and other assets into a production ready state in the `dist` directory
 
 The pattern library is powered by [Astrum](http://astrum.nodividestudio.com/). You can find [detailed documentation here](https://github.com/NoDivide/Astrum).
+
+Made with ❤️ by [HankChizlJaw](https://twitter.com/hankchizljaw).
