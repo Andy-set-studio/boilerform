@@ -22,9 +22,8 @@ If you want a bit more control, you can work with the [Sass](https://github.com/
 
 To compile assets, you can run the following commands in your terminal:
 
-- `npm run sass` will compile your Sass once
 - `npm run watch` will compile your assets and watch for further changes
-- `npm run build` will compile your Sass and other assets into a production ready state in the `dist` directory
+- `npm run build` will compile your assets into a production ready state in the `dist` directory
 
 The pattern library is powered by [Astrum](http://astrum.nodividestudio.com/). You can find [detailed documentation here](https://github.com/NoDivide/Astrum).
 
