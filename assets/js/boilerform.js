@@ -12,7 +12,7 @@ import BoilerFormCSS from '../scss/boilerform.scss';
 
         // Add a validator to each form instance
         boilerforms.map(item => {
-            let validationInstance = new Validation(boilerform);
+            let validationInstance = new Validation(item);
 
             validationInstance.init();
         });  
