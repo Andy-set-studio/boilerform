@@ -1,5 +1,5 @@
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var isProduction = process.env.NODE_ENV === 'production';
-var webpack = require('webpack');
 var path = require('path');
 var plugins = [];
 var settings = {
@@ -14,13 +14,22 @@ var settings = {
             fileName: 'boilerform.js',
             minFileName: 'boilerform.min.js',
             path: '/dist/js'
+        },
+        css: {
+            path: '../css/boilerform.css'
         }
     }
 };
+var webpack = require('webpack');
 
 if(isProduction) {
     plugins.push(new webpack.optimize.UglifyJsPlugin({ minimize: true }));
 }
+
+// Create an extract text plugin instance for Sass
+var extractPlugin = new ExtractTextPlugin(settings.outputs.css.path);
+
+plugins.push(extractPlugin);
 
 module.exports = {
     entry: path.join(__dirname, settings.inputs.js.entryPath),
@@ -33,11 +42,21 @@ module.exports = {
         umdNamedDefine: true
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.js$/,
-                loader: 'babel-loader',
-                exclude: /node_modules/
+                exclude: /node_modules/,
+                use: [
+                    {
+                        loader: 'babel-loader'
+                    }
+                ]
+            },
+            {
+                test: /\.scss$/,
+                use: extractPlugin.extract({
+                    use: ['css-loader', 'sass-loader']
+                })
             }
         ]
     },

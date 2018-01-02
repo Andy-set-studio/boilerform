@@ -1,5 +1,8 @@
 import Validation from './modules/validation';
 
+// Import Sass so that webpack picks it up
+import BoilerFormCSS from '../scss/boilerform.scss';
+
 (function() {
 
     // Look for child and root forms 
