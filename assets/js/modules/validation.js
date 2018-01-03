@@ -30,8 +30,7 @@ export default class Validation {
         // Add an invalid listener that 
         self.inputElems.map(item => {
             item.addEventListener('invalid', evt => {
-                self.process(item, 'invalid');
-                self.checkSiblings(item);
+                self.processValidity(item);
             }, false);
         });
     }
@@ -44,10 +43,20 @@ export default class Validation {
         let self = this;
 
         self.inputElems.map(item => {
-            if(item.hasAttribute('data-validation-message')) {
-                item.setCustomValidity(item.getAttribute('data-validation-message'));
-            }
+            self.setCustomValidationMessage(item);
         });
+    }
+
+    /**
+     * Set a custom validation message if item needs it
+     * @param {HTMLElement} item 
+     */
+    setCustomValidationMessage(item) {
+        let self = this;
+        
+        if(item.hasAttribute('data-validation-message')) {
+            item.setCustomValidity(item.getAttribute('data-validation-message'));
+        }
     }
 
     /**
@@ -61,11 +70,54 @@ export default class Validation {
         switch(state) {
             case 'invalid':
                 item.classList.add('is-error');
+                self.setCustomValidationMessage(item);
                 break;
             default: 
                 item.classList.remove('is-error');
                 break;
         } 
+    }
+
+    /**
+     * Run some checks to determine if the passed item is valid or not
+     * @param {HTMLElement} item 
+     */
+    processValidity(item) {
+        let self = this;
+
+        // If an item is valid, run the processor and bail
+        if(item.validity.valid) {
+            self.process(item, 'valid');
+            self.checkSiblings(item);
+            return;
+        }
+
+        // Before we determine it as invalid, check to see if there's a custom error
+        if(item.validity.customError) {
+
+            // Now let's check against some states
+            if(!item.validity.badInput 
+                && !item.validity.patternMismatch 
+                && !item.validity.rangeOverflow
+                && !item.validity.rangeUnderflow
+                && !item.validity.stepMismatch
+                && !item.validity.tooLong
+                && !item.validity.tooShort
+                && !item.validity.typeMismatch
+                && !item.validity.valueMissing) {
+                
+                // It's valid, so process accordingly
+                item.setCustomValidity('');
+                self.process(item, 'valid');
+
+                self.checkSiblings(item);
+                return;
+            }
+        }
+
+        // If we're here, it's invalid
+        self.process(item, 'invalid');
+        self.checkSiblings(item);
     }
 
     /**
@@ -80,12 +132,9 @@ export default class Validation {
         
         if(inputElems.length) {
 
+            // Run each item through the processor
             inputElems.map(item => {
-
-                // If an item is valid, run the processor 
-                if(item.validity.valid) {
-                    self.process(item, 'valid');
-                } 
+                self.processValidity(item);
             });
         }
     }
