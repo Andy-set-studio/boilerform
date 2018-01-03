@@ -19,8 +19,7 @@
   border: 1px solid #cccccc;
   padding: 11px 15px 10px 15px;
   border-radius: 2px;
-  font-size: 1rem;
-}
+  font-size: 1rem; }
 
 .boilerform .c-check-field__input {
   display: block;
@@ -28,46 +27,32 @@
   width: 0px;
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
-  visibility: hidden;
-}
+  visibility: hidden; }
 
 .boilerform {
   font-size: 16px;
   color: #141414;
-  border-color: #cccccc;
-}
-
-.boilerform,
-.boilerform * {
-  box-sizing: border-box;
-}
-
-.boilerform [class*="-field"] {
-  margin: 0;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  line-height: 1.1;
-  font-family: sans-serif;
-}
-
-.boilerform [class*="decor"] {
-  line-height: 0;
-}
-
-.boilerform ::-webkit-search-decoration {
-  display: none;
-}
-
-.boilerform input::-webkit-input-placeholder,
-.boilerform textarea::-webkit-input-placeholder,
-.boilerform select::-webkit-input-placeholder {
-  line-height: normal;
-}
-
-.boilerform input[type="search"] {
-  -webkit-appearance: textfield;
-}
+  border-color: #cccccc; }
+  .boilerform,
+  .boilerform * {
+    box-sizing: border-box; }
+  .boilerform [class*="-field"] {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+    line-height: 1.1;
+    font-family: sans-serif; }
+  .boilerform [class*="decor"] {
+    line-height: 0; }
+  .boilerform ::-webkit-search-decoration {
+    display: none; }
+  .boilerform input::-webkit-input-placeholder,
+  .boilerform textarea::-webkit-input-placeholder,
+  .boilerform select::-webkit-input-placeholder {
+    line-height: normal; }
+  .boilerform input[type="search"] {
+    -webkit-appearance: textfield; }
 
 /*------------------------------------*    BUTTON COMPONENT
 
@@ -88,12 +73,9 @@
   cursor: pointer;
   text-align: center;
   -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-.boilerform .c-button:hover, .boilerform .c-button:focus {
-  background: #888888;
-}
+  -moz-appearance: none; }
+  .boilerform .c-button:hover, .boilerform .c-button:focus {
+    background: #888888; }
 
 /*------------------------------------*    CHECK FIELD COMPONENT
 
@@ -102,69 +84,52 @@
 .boilerform .c-check-field {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-}
-
-.boilerform .c-check-field__decor {
-  display: block;
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
-  background: #eeeeee;
-  border: 1px solid #cccccc;
-  border-radius: 2px;
-  position: relative;
-  cursor: pointer;
-}
-
-.boilerform .c-check-field__decor:after {
-  content: "";
-  speak: none;
-  display: block;
-  opacity: 0;
-  width: 70%;
-  height: 70%;
-  position: absolute;
-  top: 15%;
-  left: 15%;
-  background: #888888;
-  border-radius: 1px;
-}
-
-.boilerform .c-check-field__label {
-  padding: 3px 0 0 10px;
-  cursor: pointer;
-}
-
-.boilerform .c-check-field--radio .c-check-field__decor, .boilerform .c-check-field--radio .c-check-field__decor:after {
-  border-radius: 50%;
-}
-
-.boilerform .c-check-field__input:checked ~ [class*="decor"]:after {
-  opacity: 1;
-}
-
-.boilerform .c-check-field + .c-check-field {
-  padding-top: 10px;
-}
+  align-items: flex-start; }
+  .boilerform .c-check-field__decor {
+    display: block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    background: #eeeeee;
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer; }
+    .boilerform .c-check-field__decor:after {
+      content: "";
+      speak: none;
+      display: block;
+      opacity: 0;
+      width: 70%;
+      height: 70%;
+      position: absolute;
+      top: 15%;
+      left: 15%;
+      background: #888888;
+      border-radius: 1px; }
+  .boilerform .c-check-field__label {
+    padding: 3px 0 0 10px;
+    cursor: pointer; }
+  .boilerform .c-check-field--radio .c-check-field__decor, .boilerform .c-check-field--radio .c-check-field__decor:after {
+    border-radius: 50%; }
+  .boilerform .c-check-field__input:checked ~ [class*="decor"]:after {
+    opacity: 1; }
+  .boilerform .c-check-field + .c-check-field {
+    padding-top: 10px; }
 
 /*------------------------------------*    INPUT FIELD COMPONENT
 
     All input based form field elements
 \*------------------------------------*/
 .boilerform .c-input-field[type="number"] {
-  padding-right: 11px 15px 10px 15px / 2;
-}
+  padding-right: 11px 15px 10px 15px / 2; }
 
 .boilerform .c-input-field--multiline {
   vertical-align: top;
   overflow: auto;
-  width: 100%;
-}
-
-.boilerform .c-input-field--multiline:not([rows]) {
-  min-height: 80px;
-}
+  width: 100%; }
+  .boilerform .c-input-field--multiline:not([rows]) {
+    min-height: 80px; }
 
 /*------------------------------------*    LABEL COMPONENT
 
@@ -174,21 +139,14 @@
   display: inline;
   font-family: sans-serif;
   font-weight: 700;
-  font-size: 0.88rem;
-}
-
-.boilerform .c-label[for] {
-  cursor: pointer;
-}
-
-.boilerform .c-label:after {
-  content: "\A";
-  white-space: pre;
-}
-
-.boilerform .c-label + [class*="field"] {
-  margin-top: 2px;
-}
+  font-size: 0.88rem; }
+  .boilerform .c-label[for] {
+    cursor: pointer; }
+  .boilerform .c-label:after {
+    content: "\A";
+    white-space: pre; }
+  .boilerform .c-label + [class*="field"] {
+    margin-top: 2px; }
 
 /*------------------------------------*    SELECT FIELD
 
@@ -197,30 +155,21 @@
 \*------------------------------------*/
 .boilerform .c-select-field {
   display: inline-block;
-  position: relative;
-}
-
-.boilerform .c-select-field__menu {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  padding-right: 45px;
-}
-
-.boilerform .c-select-field__menu:-moz-focusring {
-  color: transparent;
-  text-shadow: 0 0 0 #141414;
-}
-
-.boilerform .c-select-field__menu::-ms-expand {
-  display: none;
-}
-
-.boilerform .c-select-field__decor {
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  pointer-events: none;
-}
+  position: relative; }
+  .boilerform .c-select-field__menu {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 45px; }
+    .boilerform .c-select-field__menu:-moz-focusring {
+      color: transparent;
+      text-shadow: 0 0 0 #141414; }
+    .boilerform .c-select-field__menu::-ms-expand {
+      display: none; }
+  .boilerform .c-select-field__decor {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    pointer-events: none; }
 
 /*------------------------------------*    FORM LAYOUT
 
@@ -230,5 +179,11 @@
 .boilerform .is-error,
 .boilerform .is-error [class*="menu"],
 .boilerform .is-error [class*="check"] {
-  border-color: #cf0b00;
-}
+  border-color: #cf0b00; }
+  .boilerform .is-error:focus,
+  .boilerform .is-error [class*="menu"]:focus,
+  .boilerform .is-error [class*="check"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #cf0b00; }
+
+/*# sourceMappingURL=boilerform.css.map*/
