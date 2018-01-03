@@ -18,6 +18,7 @@ export default class Validation {
         let self = this;
 
         self.bind();
+        self.setCustomValidationMessages();
     }
 
     /**
@@ -32,6 +33,20 @@ export default class Validation {
                 self.process(item, 'invalid');
                 self.checkSiblings(item);
             }, false);
+        });
+    }
+
+    /**
+     * Run through each item and check they have a `data-validation-message` attribute.
+     * If so, set a custom validation message with that value
+     */
+    setCustomValidationMessages() {
+        let self = this;
+
+        self.inputElems.map(item => {
+            if(item.hasAttribute('data-validation-message')) {
+                item.setCustomValidity(item.getAttribute('data-validation-message'));
+            }
         });
     }
 
