@@ -180,5 +180,10 @@
 .boilerform .is-error [class*="menu"],
 .boilerform .is-error [class*="check"] {
   border-color: #cf0b00; }
+  .boilerform .is-error:focus,
+  .boilerform .is-error [class*="menu"]:focus,
+  .boilerform .is-error [class*="check"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #cf0b00; }
 
 /*# sourceMappingURL=boilerform.css.map*/
