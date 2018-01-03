@@ -18,7 +18,7 @@ export default class Validation {
             item.addEventListener('invalid', evt => {
                 self.process(item, 'invalid');
                 self.checkSiblings(item);
-            });
+            }, false);
         });
     }
 
@@ -37,11 +37,15 @@ export default class Validation {
 
     checkSiblings(item) {
         let self = this;
-        let inputElems = self.inputElems.filter(elem => elem != item);
-
+        let inputElems = self.inputElems.filter(elem => elem != item && elem.hasAttribute('required'));
+        
         if(inputElems.length) {
+
             inputElems.map(item => {
-                item.checkValidity();
+
+                if(item.validity.valid && item.classList.contains('is-error')) {
+                    item.classList.remove('is-error');
+                } 
             });
         }
     }
