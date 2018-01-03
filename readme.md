@@ -46,7 +46,7 @@ There's a basic validation interface available with Boilerform which extends the
 First of all, you need the JavaScript in your project. You can either take the [source code](https://github.com/hankchizljaw/boilerform/blob/master/assets/js/modules/validation.js) and add to your project, or add the dist version to bottom of your page.
 
 ```html
-<script src="https://cdn.rawgit.com/hankchizljaw/boilerform/dist/js/boilerform.min.js" async defer></script>
+<script src="https://rawgit.com/hankchizljaw/boilerform/master/dist/js/boilerform.min.js" async defer></script>
 ```
 
 Now that you've got the script, it'll "just" work, as long as your elements have the `required` attribute, which will allow them to fire an `invalid` event. You'll also need to make sure your `<form>` elements either live in a `.boilerform` parent element or have the `.boilerform` class.
