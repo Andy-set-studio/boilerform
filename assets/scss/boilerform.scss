@@ -32,6 +32,12 @@
         [class*="menu"],
         [class*="check"] {
             border-color: color(state, error);
+            
+            // Remove default focus and replace with a heavy shadow if invalid
+            &:focus {
+                outline: none;
+                box-shadow: 0 0 0 2px color(state, error);
+            }
         }
     }
 }
