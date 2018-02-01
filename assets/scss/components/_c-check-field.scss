@@ -6,7 +6,7 @@
 $namespace: ".c-check-field";
 
 #{ $namespace } {
-    
+
     @include namespace() {
         display: flex;
         flex-direction: row;
@@ -61,9 +61,15 @@ $namespace: ".c-check-field";
             &:after {
                 opacity: 1;
             }
-        }   
+        }
 
-        // Flow between instances 
+        // Focused state
+        &__input:focus ~ [class*="decor"] {
+            outline: 1px dotted #212121;
+            outline: 5px auto -webkit-focus-ring-color;
+        }
+
+        // Flow between instances
         & + #{ $namespace } {
             padding-top: $check-field-flow;
         }
