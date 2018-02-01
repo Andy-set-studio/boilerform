@@ -31,10 +31,10 @@
     },
     "assets": {
         "css": [
-            "/assets/css/boilerform.css"
+            "/assets/css/boilerform.css?v=1.1.1"
         ],
         "js": [
-            "/assets/js/patterns.js"
+            "/assets/js/patterns.js?v=1.1.1"
         ]
     },
     "font_libraries": {
