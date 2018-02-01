@@ -23,13 +23,14 @@
 
 .boilerform .c-check-field__input {
   display: block;
-  position: absolute;
-  left: -9999px;
-  height: 0px;
-  width: 0px;
+  height: 1px;
+  width: 1px;
   overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
-  white-space: nowrap; }
+  clip-path: inset(1px);
+  white-space: nowrap;
+  position: absolute; }
 
 .boilerform {
   font-size: 16px;
