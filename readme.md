@@ -63,4 +63,4 @@ This will show "A custom message" in the tooltip that shows when the field fails
 
 ---
 
-Made with ❤️ by [HankChizlJaw](https://twitter.com/hankchizljaw).
+Made with ❤️ by [HankChizlJaw](https://twitter.com/hankchizljaw) and [friends](https://github.com/hankchizljaw/boilerform/graphs/contributors).
