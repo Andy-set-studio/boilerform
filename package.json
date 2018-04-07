@@ -23,6 +23,7 @@
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-env": "^1.6.1",
     "css-loader": "^0.28.7",
+    "dotenv": "^5.0.1",
     "extract-text-webpack-plugin": "^3.0.2",
     "find-remove": "^1.2.0",
     "ncp": "^2.0.0",
