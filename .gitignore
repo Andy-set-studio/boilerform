@@ -8,3 +8,6 @@ npm-debug.*
 
 # Compiled assets
 pattern-library/assets/css
+
+# Ignore 'sandbox'. This is where you can play around with features etc
+sandbox/
