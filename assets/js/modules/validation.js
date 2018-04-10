@@ -30,6 +30,7 @@ export default class Validation {
         self.inputElems.map(item => {
             item.addEventListener('invalid', () => {
                 self.processValidity(item);
+                self.checkSiblings(item);
             }, false);
         });
     }
@@ -48,7 +49,20 @@ export default class Validation {
             default: 
                 item.classList.remove('is-error');
                 break;
-        } 
+        }
+    }
+
+    /**
+     * Filter sibling elements and run them through the validity checker
+     *
+     * @param {HTMLFormElement} exludedField
+     */
+    checkSiblings(exludedField) {
+        let self = this;
+
+        self.inputElems
+            .filter(item => item !== exludedField)
+            .map(item => self.processValidity(item));
     }
 
     /**
