@@ -1,3 +1,11 @@
+// Pull in .env settings 
+require('dotenv').config();
+
+// Create CSS and JS output paths 
+var CSS_OUTPUT_PATH = process.env.CSS_OUTPUT_PATH ? process.env.CSS_OUTPUT_PATH : '../css/boilerform.css';
+var JS_OUTPUT_PATH = process.env.JS_OUTPUT_PATH ? process.env.JS_OUTPUT_PATH : '/dist/js';
+
+// Define webpack stuff
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var isProduction = process.env.NODE_ENV === 'production';
 var path = require('path');
@@ -13,10 +21,10 @@ var settings = {
         js: {
             fileName: 'boilerform.js',
             minFileName: 'boilerform.min.js',
-            path: '/dist/js'
+            path: JS_OUTPUT_PATH
         },
         css: {
-            path: '../css/boilerform.css'
+            path: CSS_OUTPUT_PATH 
         }
     }
 };

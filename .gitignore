@@ -5,6 +5,10 @@ node_modules
 *.log
 *.scssc
 npm-debug.*
+.env
 
 # Compiled assets
 pattern-library/assets/css
+
+# Ignore 'sandbox'. This is where you can play around with features etc
+sandbox/
