@@ -22,7 +22,7 @@ Then all you need to do is wrap your elements in a `.boilerform` wrapper. It cou
 
 ```html
 <div class="boilerform">
-    <!-- Add all of your boilerform elements in here 👍🏼 -->
+    <!-- Add all of your boilerform elements in here 👍 -->
 </div>
 ```
 
@@ -39,8 +39,7 @@ The pattern library is powered by [Astrum](http://astrum.nodividestudio.com/). Y
 
 ## Validation interface
 
-There's a basic validation interface available with Boilerform which extends the native HTML validation facility with a few visual tweaks. It also allows you to set custom validation messages by setting a data attribute on your input.
-
+There's a basic validation interface available with Boilerform which extends the native HTML validation facility with a few visual tweaks.
 ### Getting started 
 
 First of all, you need the JavaScript in your project. You can either take the [source code](https://github.com/hankchizljaw/boilerform/blob/master/assets/js/modules/validation.js) and add to your project, or add the dist version to bottom of your page.
@@ -49,18 +48,7 @@ First of all, you need the JavaScript in your project. You can either take the [
 <script src="https://rawgit.com/hankchizljaw/boilerform/master/dist/js/boilerform.min.js?v=1.1.1" async defer></script>
 ```
 
-Now that you've got the script, it'll "just" work, as long as your elements have the `required` attribute, which will allow them to fire an `invalid` event. You'll also need to make sure your `<form>` elements either live in a `.boilerform` parent element or have the `.boilerform` class.
-
-You can push it further by adding a custom message. To do so, add a `data-validation-message` attribute.
-
-#### Example
-
-```html
-<input type="text" data-validation-message="A custom message" required />
-```
-
-This will show "A custom message" in the tooltip that shows when the field fails validation 👍🏼
-
+Now that you've got the script, it'll work, as long as your elements have the `required` attribute, which will allow them to fire an `invalid` event. You'll also need to make sure your `<form>` elements either live in a `.boilerform` parent element or have the `.boilerform` class.
 ---
 
 Made with ❤️ by [HankChizlJaw](https://twitter.com/hankchizljaw) and [friends](https://github.com/hankchizljaw/boilerform/graphs/contributors).
