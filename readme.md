@@ -49,6 +49,7 @@ First of all, you need the JavaScript in your project. You can either take the [
 ```
 
 Now that you've got the script, it'll work, as long as your elements have the `required` attribute, which will allow them to fire an `invalid` event. You'll also need to make sure your `<form>` elements either live in a `.boilerform` parent element or have the `.boilerform` class.
+
 ---
 
 Made with ❤️ by [HankChizlJaw](https://twitter.com/hankchizljaw) and [friends](https://github.com/hankchizljaw/boilerform/graphs/contributors).
