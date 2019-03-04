@@ -4,7 +4,7 @@
 
 Boilerform is a little HTML and CSS boilerplate to take the pain away from working with forms.
 
-By providing baseline BEM structured CSS and appropriate attributes on elements: Boilerform gives you a head start building forms in the best possible way with a view to being dropped into most projects. 
+By providing baseline BEM structured CSS and appropriate attributes on elements: Boilerform gives you a head start building forms in the best possible way with a view to being dropped into most projects.
 
 The idea was first thought-up by [@chriscoyier](https://twitter.com/chriscoyier) on [CSS Tricks](https://css-tricks.com/boilerform).
 
@@ -15,10 +15,10 @@ The idea was first thought-up by [@chriscoyier](https://twitter.com/chriscoyier)
 Boilerform is designed to be straight-forward to implement. In its most basic form, you can drop a CSS file into your head with the following snippet:
 
 ```html
-<link rel="stylesheet" media="all" href="https://rawgit.com/hankchizljaw/boilerform/master/dist/css/boilerform.min.css?v=1.1.1" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/gh/hankchizljaw/boilerform@master/dist/css/boilerform.min.css?v=1.1.1" />
 ```
 
-Then all you need to do is wrap your elements in a `.boilerform` wrapper. It could be something like this: 
+Then all you need to do is wrap your elements in a `.boilerform` wrapper. It could be something like this:
 
 ```html
 <div class="boilerform">
@@ -40,12 +40,12 @@ The pattern library is powered by [Astrum](http://astrum.nodividestudio.com/). Y
 ## Validation interface
 
 There's a basic validation interface available with Boilerform which extends the native HTML validation facility with a few visual tweaks.
-### Getting started 
+### Getting started
 
 First of all, you need the JavaScript in your project. You can either take the [source code](https://github.com/hankchizljaw/boilerform/blob/master/assets/js/modules/validation.js) and add to your project, or add the dist version to bottom of your page.
 
 ```html
-<script src="https://rawgit.com/hankchizljaw/boilerform/master/dist/js/boilerform.min.js?v=1.1.1" async defer></script>
+<script src="https://cdn.jsdelivr.net/gh/hankchizljaw/boilerform@master/dist/js/boilerform.min.js?v=1.1.1" async defer></script>
 ```
 
 Now that you've got the script, it'll work, as long as your elements have the `required` attribute, which will allow them to fire an `invalid` event. You'll also need to make sure your `<form>` elements either live in a `.boilerform` parent element or have the `.boilerform` class.
