@@ -8,7 +8,7 @@ By providing baseline BEM structured CSS and appropriate attributes on elements:
 
 The idea was first thought-up by [@chriscoyier](https://twitter.com/chriscoyier) on [CSS Tricks](https://css-tricks.com/boilerform).
 
-🌍 [https://boilerform.design](https://boilerform.design)
+🌍 <https://boilerform.hankchizljaw.com>
 
 
 ## Getting started
