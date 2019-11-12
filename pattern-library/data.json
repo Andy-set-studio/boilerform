@@ -8,8 +8,16 @@
     "client_url": null,
     "creators": [
         {
-            "name": "hankchizljaw",
-            "url": "//hankchizljaw.io"
+            "name": "Boilerform site",
+            "url": "//boilerform.hankchizljaw.com"
+        },
+        {
+            "name": "Boilerform repo",
+            "url": "//github.com/hankchizljaw/boilerform"
+        },
+        {
+            "name": "By hankchizljaw",
+            "url": "//hankchizljaw.com"
         }
     ],
     "theme": {
@@ -31,7 +39,7 @@
     },
     "assets": {
         "css": [
-            "/assets/css/boilerform.css?v=1.1.1"
+            "https://cdn.statically.io/gh/hankchizljaw/boilerform/70a13a07/dist/css/boilerform.min.css"
         ],
         "js": [
             "/assets/js/patterns.js?v=1.1.1"
